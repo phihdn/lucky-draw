@@ -704,7 +704,7 @@
             </div>
         </footer>
 
-        <textarea id="result" style="height: 1400px" class="container-fluid"></textarea>
+        <textarea id="result" style="height: 1400px; display: none;" class="container-fluid"></textarea>
 
         <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
         <script src="bootstrap/js/popper.min.js"></script>
@@ -750,7 +750,7 @@
                     var result = lines[randomRowIndex];
                     localStorage.setItem(prize, JSON.stringify(result));
 
-                    var drawing = 100000;
+                    var drawing = 70000;
                     var drawx = 0
                     for (var i = 0; i < drawing; i++) {
                         setTimeout(function () {
@@ -762,7 +762,7 @@
                             if (drawx == drawing) {
                                 fillWinner();
                             }
-                        }, 500);
+                        }, 3000);
                     }
                     lines.splice(randomRowIndex, 1); // Remove the item from the array
                     localStorage.setItem("lucky-data", JSON.stringify(lines));
