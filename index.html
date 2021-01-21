@@ -697,14 +697,14 @@
                             <a class="footerlinks lead" href="youtube.com/simplesnippets" target="_blank"
                                 >Simple Snippets</a
                             >
-                            <a href="#" onclick="reset()">reset</a>
+                            <a href="#" onclick="reset()">reset</a> <a href="#" onclick="stopaudio()">stop</a>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <textarea id="result" style="height: 1400px; display: none;" class="container-fluid"></textarea>
+        <textarea id="result" style="height: 1400px; display: none" class="container-fluid"></textarea>
 
         <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
         <script src="bootstrap/js/popper.min.js"></script>
@@ -712,6 +712,7 @@
         <script src="bootstrap/js/jquery.csv.js"></script>
 
         <script>
+            var audio;
             $(document).ready(function () {
                 $.ajax({
                     type: "GET",
@@ -751,7 +752,7 @@
                     localStorage.setItem(prize, JSON.stringify(result));
 
                     var drawing = 70000;
-                    var drawx = 0
+                    var drawx = 0;
                     for (var i = 0; i < drawing; i++) {
                         setTimeout(function () {
                             var r = Math.floor(Math.random() * lines.length);
@@ -817,10 +818,18 @@
                     document.getElementById("winnertext5").innerHTML = x;
                     document.getElementById("img5").src = "imgs/cup.png";
                 } */
+
+                if (textboxno == 1) {
+                    audio = new Audio("audio/Champion.mp3");
+                }
+                audio.play();
             }
             function reset() {
                 localStorage.clear();
                 location.reload();
+            }
+            function stopaudio() {
+                audio.pause();
             }
         </script>
     </body>
