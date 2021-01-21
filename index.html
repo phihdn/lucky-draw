@@ -1,315 +1,400 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Teko:400,500,600,700&display=swap" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,500i,700,700i|Teko&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Bootstrap CSS -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Teko:400,500,600,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,500i,700,700i|Teko&display=swap" rel="stylesheet">
+        <title>Hello, world!</title>
+        <style>
+            .footerlinks {
+                color: #ffffff;
+                text-decoration: none !important;
+            }
 
-  <title>Hello, world!</title>
-  <style>
-    .footerlinks {
-      color: #ffffff;
-      text-decoration: none !important;
-    }
+            .footerlinks:hover {
+                color: #ffd800;
+            }
+            .winnertext {
+                font-weight: 500;
+                font-size: 40px;
+                color: #4c27a3;
+            }
+            .winnerno {
+                background-color: #ffd800;
+                font-family: "Teko", sans-serif;
+                font-weight: 600;
+                font-size: 75px;
+                border: 2px solid #fa9747;
+                border-radius: 10px;
+                margin-bottom: 0px;
+                color: #482cc2;
+            }
+            .btn {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 25px;
+            }
 
-    .footerlinks:hover {
-      color: #ffd800;
-    }
-    .winnertext{
-     
-      font-weight: 500;
-      font-size: 40px;
-      color: #4c27a3;
-    }
-    .winnerno{
-      background-color: #ffd800;
-      font-family: 'Teko', sans-serif;
-      font-weight: 600;
-      font-size: 75px;
-      border: 2px solid #fa9747;
-      border-radius: 10px;
-      margin-bottom: 0px;
-      color: #482cc2;
-    }
-    .btn{
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 25px;
-    }
+            #footer2 {
+                background: #272727;
+            }
+        </style>
+    </head>
 
-    #footer2 {
-      background: #272727;
-    }
-  </style>
-</head>
-
-<body>
-    <div class="row">
-        <div class="col">
-            <img src="imgs/main-header1.jpg" style="width: 100%;" class="card-img-top img-fluid">
+    <body>
+        <div class="row">
+            <div class="col">
+                <img src="imgs/main-header1.jpg" style="width: 100%" class="card-img-top img-fluid" />
+            </div>
         </div>
-      </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 mx-auto text-center">
-        <div class="card">
-          
-
-          <div class="card-body">
+        <div class="container-fluid">
             <div class="row">
-              <div class="col">
-                <h1>50K Merch Giveaway Lucky Draw Contest</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <hr />
-              </div>
-            </div>
-
-            <div class="row mx-auto">
-              <div class="col-2  mx-auto">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col">
-                        <img id="img1" src="imgs/user.png" width="150px" class="img-fluid p-1">
-                      </div>
-                    </div>
-                    <div class="row mt-1">
-                        <div class="col">
-                          <p class="winnertext" style="margin-bottom: 0px;">1st</p>
-                        </div>
-                      </div>
-                    <div class="row">
-                      <div class="col">
-                        <hr>
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col form-group input-group-lg">
-                          <h1 id="winnertext1"class="display-4 winnerno">0000</h1>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col form-group">
-                        <button id="btn1" type="button" class="btn btn-lg btn-block btn-success"
-                          onclick="fn(1)">Draw</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-2  mx-auto">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col">
-                          <img id="img2" src="imgs/user.png" width="150px" class="img-fluid p-1">
-                        </div>
-                      </div>
-                      <div class="row mt-1">
-                          <div class="col">
-                            <p class="winnertext" style="margin-bottom: 0px;">2nd</p>
-                          </div>
-                        </div>
-                      <div class="row">
-                        <div class="col">
-                          <hr>
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="col form-group input-group-lg">
-                            <h1 id="winnertext2"class="display-4 winnerno">0000</h1>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col form-group">
-                          <button id="btn2" type="button" class="btn btn-lg btn-block btn-success"
-                            onclick="fn(2)">Draw</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-2  mx-auto">
+                <div class="col-12 mx-auto text-center">
                     <div class="card">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col">
-                            <img id="img3" src="imgs/user.png" width="150px" class="img-fluid p-1">
-                          </div>
-                        </div>
-                        <div class="row mt-1">
-                            <div class="col">
-                              <p class="winnertext" style="margin-bottom: 0px;">3rd</p>
-                            </div>
-                          </div>
-                        <div class="row">
-                          <div class="col">
-                            <hr>
-                          </div>
-                        </div>
-                        
-                        <div class="row">
-                          <div class="col form-group input-group-lg">
-                              <h1 id="winnertext3"class="display-4 winnerno">0000</h1>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col form-group">
-                            <button id="btn3" type="button" class="btn btn-lg btn-block btn-success"
-                              onclick="fn(3)">Draw</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-2  mx-auto">
-                      <div class="card">
                         <div class="card-body">
-                          <div class="row">
-                            <div class="col">
-                              <img id="img4" src="imgs/user.png" width="150px" class="img-fluid p-1">
-                            </div>
-                          </div>
-                          <div class="row mt-1">
-                              <div class="col">
-                                <p class="winnertext" style="margin-bottom: 0px;">4th</p>
-                              </div>
-                            </div>
-                          <div class="row">
-                            <div class="col">
-                              <hr>
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col form-group input-group-lg">
-                                <h1 id="winnertext4"class="display-4 winnerno">0000</h1>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col form-group">
-                              <button id="btn4" type="button" class="btn btn-lg btn-block btn-success"
-                                onclick="fn(4)">Draw</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-2  mx-auto">
-                        <div class="card">
-                          <div class="card-body">
                             <div class="row">
-                              <div class="col">
-                                <img id="img5" src="imgs/user.png" width="150px" class="img-fluid p-1">
-                              </div>
-                            </div>
-                            <div class="row mt-1">
                                 <div class="col">
-                                  <p class="winnertext" style="margin-bottom: 0px;">5th</p>
+                                    <h1>50K Merch Giveaway Lucky Draw Contest</h1>
                                 </div>
-                              </div>
-                            <div class="row">
-                              <div class="col">
-                                <hr>
-                              </div>
-                            </div>
-                            
-                            <div class="row">
-                              <div class="col form-group input-group-lg">
-                                  <h1 id="winnertext5"class="display-4 winnerno">0000</h1>
-                              </div>
                             </div>
                             <div class="row">
-                              <div class="col form-group">
-                                <button id="btn5" type="button" class="btn btn-lg btn-block btn-success"
-                                  onclick="fn(5)">Draw</button>
-                              </div>
+                                <div class="col">
+                                    <hr />
+                                </div>
                             </div>
-                          </div>
+
+                            <div class="row mx-auto">
+                                <div class="col-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img
+                                                        id="img1"
+                                                        src="imgs/user.png"
+                                                        width="150px"
+                                                        class="img-fluid p-1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="row mt-1">
+                                                <div class="col">
+                                                    <p class="winnertext" style="margin-bottom: 0px">1st</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <hr />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col form-group input-group-lg">
+                                                    <h1 id="winnertext1" class="display-4 winnerno">0000</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <button
+                                                        id="btn1"
+                                                        type="button"
+                                                        class="btn btn-lg btn-block btn-success"
+                                                        onclick="fn(1)"
+                                                    >
+                                                        Draw
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img
+                                                        id="img2"
+                                                        src="imgs/user.png"
+                                                        width="150px"
+                                                        class="img-fluid p-1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="row mt-1">
+                                                <div class="col">
+                                                    <p class="winnertext" style="margin-bottom: 0px">2nd</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <hr />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col form-group input-group-lg">
+                                                    <h1 id="winnertext2" class="display-4 winnerno">0000</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <button
+                                                        id="btn2"
+                                                        type="button"
+                                                        class="btn btn-lg btn-block btn-success"
+                                                        onclick="fn(2)"
+                                                    >
+                                                        Draw
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img
+                                                        id="img3"
+                                                        src="imgs/user.png"
+                                                        width="150px"
+                                                        class="img-fluid p-1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="row mt-1">
+                                                <div class="col">
+                                                    <p class="winnertext" style="margin-bottom: 0px">3rd</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <hr />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col form-group input-group-lg">
+                                                    <h1 id="winnertext3" class="display-4 winnerno">0000</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <button
+                                                        id="btn3"
+                                                        type="button"
+                                                        class="btn btn-lg btn-block btn-success"
+                                                        onclick="fn(3)"
+                                                    >
+                                                        Draw
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img
+                                                        id="img4"
+                                                        src="imgs/user.png"
+                                                        width="150px"
+                                                        class="img-fluid p-1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="row mt-1">
+                                                <div class="col">
+                                                    <p class="winnertext" style="margin-bottom: 0px">4th</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <hr />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col form-group input-group-lg">
+                                                    <h1 id="winnertext4" class="display-4 winnerno">0000</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <button
+                                                        id="btn4"
+                                                        type="button"
+                                                        class="btn btn-lg btn-block btn-success"
+                                                        onclick="fn(4)"
+                                                    >
+                                                        Draw
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img
+                                                        id="img5"
+                                                        src="imgs/user.png"
+                                                        width="150px"
+                                                        class="img-fluid p-1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="row mt-1">
+                                                <div class="col">
+                                                    <p class="winnertext" style="margin-bottom: 0px">5th</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <hr />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col form-group input-group-lg">
+                                                    <h1 id="winnertext5" class="display-4 winnerno">0000</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <button
+                                                        id="btn5"
+                                                        type="button"
+                                                        class="btn btn-lg btn-block btn-success"
+                                                        onclick="fn(5)"
+                                                    >
+                                                        Draw
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>     
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <footer>
+        <footer>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center p-4">
+                        <p class="lead" style="color: whitesmoke">
+                            &copy All right Reversed.
+                            <a class="footerlinks lead" href="youtube.com/simplesnippets" target="_blank"
+                                >Simple Snippets</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <div id="footer2" class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center p-4">
-          <p class="lead" style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks lead"
-              href="youtube.com/simplesnippets" target="_blank">Simple Snippets</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+        <textarea id="result" style="height: 1400px" class="container-fluid"></textarea>
 
+        <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+        <script src="bootstrap/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/jquery.csv.js"></script>
 
+        <script>
+            $(document).ready(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "data.csv",
+                    dataType: "text",
+                    success: function (data) {
+                        processData(data);
+                    },
+                });
+            });
 
+            function processData(allText) {
+                lines = $.csv.toObjects(allText);
 
-  <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
-  <script src="bootstrap/js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+                if (typeof Storage !== "undefined") {
+                    var lines1 = localStorage.getItem("lucky-data");
 
-  <script>
+                    if (!lines1) {
+                        localStorage.setItem("lucky-data", JSON.stringify(lines));
+                    }
+                    // Retrieve
+                    lines1 = JSON.parse(localStorage.getItem("lucky-data"));
+                    $("#result").empty();
+                    $("#result").html(JSON.stringify(lines1, null, 2));
+                    console.log(lines1);
+                    getRandomRow(lines1);
+                } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+                }
+            }
 
-    function getRandomInt(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+            function getRandomRow() {
+                if (typeof Storage !== "undefined") {
+                    var lines = JSON.parse(localStorage.getItem("lucky-data"));
+                    var randomRowIndex = Math.floor(Math.random() * lines.length);
+                    $("#result").html($("#result").html() + "\n" + JSON.stringify(lines[randomRowIndex])); // Put the item in the big textbox
+                    lines.splice(randomRowIndex, 1); // Remove the item from the array
+                    localStorage.setItem("lucky-data", JSON.stringify(lines));
+                } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+                }
+            }
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
 
-    function fn(textboxno) {
-      var x = getRandomInt(2, 43);
-      if(textboxno==1)
-      {
-        document.getElementById("winnertext1").innerHTML = x;
-        document.getElementById("img1").src="imgs/cup.png";
-      }
-      else if(textboxno==2)
-      {
-        document.getElementById("winnertext2").innerHTML = x;
-        document.getElementById("img2").src="imgs/cup.png";
-      }
-      else if(textboxno==3)
-      {
-        document.getElementById("winnertext3").innerHTML = x;
-        document.getElementById("img3").src="imgs/cup.png";
-      }
-      else if(textboxno==4)
-      {
-        document.getElementById("winnertext4").innerHTML = x;
-        document.getElementById("img4").src="imgs/cup.png";
-      }
-      else if(textboxno==5)
-      {
-        document.getElementById("winnertext5").innerHTML = x;
-        document.getElementById("img5").src="imgs/cup.png";
-      }
-      
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
 
-    }
-  </script>
-
-
-</body>
-
+            function fn(textboxno) {
+                getRandomRow();
+                var x = getRandomInt(2, 43);
+                if (textboxno == 1) {
+                    document.getElementById("winnertext1").innerHTML = x;
+                    document.getElementById("img1").src = "imgs/cup.png";
+                } else if (textboxno == 2) {
+                    document.getElementById("winnertext2").innerHTML = x;
+                    document.getElementById("img2").src = "imgs/cup.png";
+                } else if (textboxno == 3) {
+                    document.getElementById("winnertext3").innerHTML = x;
+                    document.getElementById("img3").src = "imgs/cup.png";
+                } else if (textboxno == 4) {
+                    document.getElementById("winnertext4").innerHTML = x;
+                    document.getElementById("img4").src = "imgs/cup.png";
+                } else if (textboxno == 5) {
+                    document.getElementById("winnertext5").innerHTML = x;
+                    document.getElementById("img5").src = "imgs/cup.png";
+                }
+            }
+        </script>
+    </body>
 </html>
