@@ -704,6 +704,10 @@
             </div>
         </footer>
 
+        <div id="inputDiv" stype="display: none;">
+            <a href="#" onclick="loadData()">load data</a
+            ><textarea id="inputData" style="height: 1400px" class="container-fluid"></textarea>
+        </div>
         <textarea id="result" style="height: 1400px; display: none" class="container-fluid"></textarea>
 
         <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
@@ -714,16 +718,36 @@
         <script>
             var audio;
             $(document).ready(function () {
-                $.ajax({
+                /* $.ajax({
                     type: "GET",
                     url: "data.csv",
                     dataType: "text",
                     success: function (data) {
                         processData(data);
                     },
-                });
+                }); */
+                loadData();
                 fillWinner();
             });
+
+            function loadData() {
+                if (typeof Storage !== "undefined") {
+                    var lines1 = localStorage.getItem("lucky-data");
+                    if (lines1 && lines1 != "") {
+                        document.getElementById("inputDiv").style.display = "none";
+                    } else {
+                        document.getElementById("inputDiv").style.display = "block";
+                        var data = document.getElementById("inputData").value;
+                        console.log(data);
+                        if (data && data != "") {
+                            processData(data);
+                            document.getElementById("inputDiv").style.display = "none";
+                        }
+                    }
+                } else {
+                    alert("Sorry, your browser does not support Web Storage...");
+                }
+            }
 
             function processData(allText) {
                 lines = $.csv.toObjects(allText);
@@ -740,7 +764,7 @@
                     $("#result").html(JSON.stringify(lines1, null, 2));
                     console.log(lines1);
                 } else {
-                    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+                    alert("Sorry, your browser does not support Web Storage...");
                 }
             }
 
